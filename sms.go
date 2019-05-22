@@ -55,8 +55,8 @@ func main() {
 
   // Make message
   message := url.Values{}
-  message.Set("To","+33 7 67 32 55 50")
-  message.Set("From","+15057154914")
+  message.Set("To","Your number")
+  message.Set("From","Your trial number")
   message.Set("Body",quote[rand.Intn(len(quote))])
   messageReader := *strings.NewReader(message.Encode())
 
